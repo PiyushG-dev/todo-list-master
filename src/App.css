@@ -1,1 +1,31 @@
+.App{
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    margin: 3rem 0rem;
+    padding: 0rem 1rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+}
 
+.container{
+    background-color: #b274ff;
+    width: 75%;
+    margin: 1rem 0rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.heading{
+    color: #fff;
+}
+
+.heading h2{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.heading h1{
+    font-size: 2.5rem;
+}
