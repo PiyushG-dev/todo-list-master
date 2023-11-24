@@ -1,4 +1,4 @@
-# custom todo-app
+# Todo-List-App
 
 A simple and intuitive ToDo application to help you manage your tasks efficiently. Keep track of your daily activities, set priorities, and stay organized with our easy-to-use ToDo app.
 
