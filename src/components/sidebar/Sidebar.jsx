@@ -4,7 +4,7 @@ import profile from "../../assets/prof.jpg";
 
 const Sidebar = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.sidebar_container}>
       <div className={styles.info_wrapper}>
         <div className={styles.info_container}>
           <img src={profile} alt="profile_img" />
