@@ -3,6 +3,7 @@
 A simple and intuitive ToDo application to help you manage your tasks efficiently. Keep track of your daily activities, set priorities, and stay organized with our easy-to-use ToDo app.
 
 Features:
+<br/>
 1.Create Tasks: Quickly add new tasks with a title and optional description.
 <br/>
 2.Mark as Completed: Check off tasks as you complete them to monitor your progress.
