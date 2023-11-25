@@ -13,7 +13,7 @@
 
 .item_container .item h1{
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.5vmax;
 }
 
 .item{
@@ -29,13 +29,8 @@
     background-color:#ff8977;
 }
 
-.item_container button{
-    width: 8rem;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    background-color: #6d33b5;
-    color: #fff;
-    border: none;
-    border-radius: 1rem;
+.delete{
+    font-size: 1.5rem;
+    color: #33105d;
     cursor: pointer;
 }

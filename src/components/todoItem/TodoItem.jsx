@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./TodoItem.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 
 const TodoItem = ({ task, deleteItem }) => {
   return (
@@ -8,7 +10,13 @@ const TodoItem = ({ task, deleteItem }) => {
         <span></span>
         <h1>{task}</h1>
       </div>
-      <button onClick={deleteItem}>remove</button>
+      <div className={styles.item_features}>
+        <FontAwesomeIcon
+          onClick={deleteItem}
+          className={styles.delete}
+          icon={faDeleteLeft}
+        />
+      </div>
     </div>
   );
 };

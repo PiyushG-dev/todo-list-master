@@ -1,0 +1,31 @@
+.container{
+    background-color: #b274ff;
+    width: 75%;
+    margin: .5rem 0rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding-top: 4vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    align-items: center;
+    position: relative;
+}
+
+.heading{
+    color: #fff;
+}
+
+.heading h2{
+    font-weight: 300;
+    font-size: 2.5vmax;
+}
+
+.socials{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    gap: 2vmax;
+    font-size: 1.5rem;
+    color: #fff;
+}

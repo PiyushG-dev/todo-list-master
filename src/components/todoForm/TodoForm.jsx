@@ -7,7 +7,11 @@ const TodoForm = ({ addItem }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addItem(task);
+    if (task !== "") {
+      addItem(task);
+    } else {
+      alert("fill all the boxes");
+    }
     setTask("");
   };
 

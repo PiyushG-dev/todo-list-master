@@ -1,34 +1,11 @@
 .App{
     display: flex;
     width: 90vw;
-    height: 100vh;
+    height: 150vh;
     margin: 3rem 0rem;
     padding: 0rem .5rem;
     border-radius: 1.5rem;
     background-color: #fff;
+    overflow: hidden;
 }
 
-.container{
-    background-color: #b274ff;
-    width: 75%;
-    margin: .5rem 0rem;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.heading{
-    color: #fff;
-}
-
-.heading h2{
-    font-weight: 500;
-    font-size: 2rem;
-}
-.heading h1{
-    font-size: 2.5rem;
-}
