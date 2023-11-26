@@ -22,14 +22,14 @@
     width: 8rem;
     padding: .5rem 1rem;
     font-size: 1rem;
-    background-color: #6d33b5;
+    background-color: #444444;
     color: #fff;
     border: none;
     border-radius: 1rem;
     cursor: pointer;
 }
 .form_container button:active{
-    background-color: #33105d;
+    background-color: #505050;
 }
 
 .features{
@@ -46,14 +46,14 @@
     width: 6rem;
     padding: .5rem 1rem;
     font-size: 1rem;
-    background-color: #6d33b5;
+    background-color: #444444;
     color: #fff;
     border: none;
     border-radius: 1rem;
     cursor: pointer;
 }
 .task_type:active{
-    background-color: #33105d;
+    background-color: #505050;
 }
 
 .task_type span:nth-of-type(1){

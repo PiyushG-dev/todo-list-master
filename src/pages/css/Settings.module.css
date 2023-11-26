@@ -1,0 +1,19 @@
+.wrapper{
+    background-color: #b274ff;
+    width: 75%;
+    margin: .5rem 0rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 75%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2vmax 2vmax;
+    margin-top: 2vmax;
+}
+

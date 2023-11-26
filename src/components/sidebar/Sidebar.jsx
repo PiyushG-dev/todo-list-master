@@ -1,21 +1,18 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
 import profile from "../../assets/prof.jpg";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendar,
-  faCalendarAlt,
-  faGear,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faGear } from "@fortawesome/free-solid-svg-icons";
 
-const Sidebar = () => {
+const Sidebar = ({ sidebarStyle, isDarkMode }) => {
   return (
-    <div className={styles.sidebar_container}>
+    <div style={sidebarStyle} className={styles.sidebar_container}>
       <div className={styles.info_wrapper}>
         <div className={styles.info_container}>
           <img src={profile} alt="profile_img" />
           <div className={styles.info}>
-            <h2>Do-it</h2>
+            <h2 style={{ color: isDarkMode ? "#fff" : "#333" }}>Do-it</h2>
             <p>Daniel Snellberg</p>
           </div>
         </div>
@@ -25,33 +22,48 @@ const Sidebar = () => {
         <div className={styles.link_container}>
           <div className={styles.link}>
             <FontAwesomeIcon className={styles.calender} icon={faCalendar} />
-            <h2>Today Tasks</h2>
+            <Link
+              to="/"
+              style={{
+                color: "#5d5d5d",
+                fontWeight: 300,
+                textDecoration: "none",
+                fontSize: "1.8vmax",
+                color: isDarkMode ? "#fff" : "#333",
+              }}
+            >
+              Today's Tasks
+            </Link>
           </div>
           <div className={styles.filter_container}>
             <div className={styles.filter}>
               <span></span>
-              <h2>Personal</h2>
+              <h2 style={{ color: isDarkMode ? "#fff" : "#333" }}>Personal</h2>
             </div>
             <div className={styles.filter}>
               <span></span>
-              <h2>Freelance</h2>
+              <h2 style={{ color: isDarkMode ? "#fff" : "#333" }}>Freelance</h2>
             </div>
             <div className={styles.filter}>
               <span></span>
-              <h2>work</h2>
+              <h2 style={{ color: isDarkMode ? "#fff" : "#333" }}>work</h2>
             </div>
           </div>
         </div>
         <div className={styles.link}>
-          <FontAwesomeIcon
-            className={styles.calenderAlt}
-            icon={faCalendarAlt}
-          />
-          <h2>Scheduled Tasks</h2>
-        </div>
-        <div className={styles.link}>
           <FontAwesomeIcon className={styles.gear} icon={faGear} />
-          <h2>Settings</h2>
+          <Link
+            to="/settings"
+            style={{
+              color: "#5d5d5d",
+              fontWeight: 300,
+              textDecoration: "none",
+              fontSize: "1.8vmax",
+              color: isDarkMode ? "#fff" : "#333",
+            }}
+          >
+            Settings
+          </Link>
         </div>
       </div>
     </div>

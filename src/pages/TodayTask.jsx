@@ -11,7 +11,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-const TodayTask = () => {
+const TodayTask = ({ appStyle }) => {
   const [items, setItems] = useState([
     { id: 1, task: "Design team meeting" },
     { id: 2, task: "Code reviews" },
@@ -43,7 +43,7 @@ const TodayTask = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div style={appStyle} className={styles.container}>
       <div className={styles.socials}>
         <FontAwesomeIcon icon={faInstagram} />
         <FontAwesomeIcon icon={faSnapchat} />

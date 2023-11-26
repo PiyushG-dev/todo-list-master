@@ -71,12 +71,6 @@
     color: #cdcaca;
 }
 
-.link h2{ 
-    color: #5d5d5d;
-    font-weight: 300;
-    font-size: 1.8vmax;
-}
-
 .link_container{
     display: flex;
     flex-direction: column;
