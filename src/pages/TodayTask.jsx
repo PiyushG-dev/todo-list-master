@@ -14,9 +14,14 @@ import {
 const TodayTask = () => {
   const [items, setItems] = useState([
     { id: 1, task: "Design team meeting" },
-    { id: 2, task: "Make button design" },
-    { id: 3, task: "Investor meeting" },
+    { id: 2, task: "Code reviews" },
   ]);
+
+  const colorToggle = ["#ff8977", "#79d2ff", "#ffdb79"];
+
+  const [editItemId, setEditItemId] = useState(null);
+  const [editedTask, setEditedTask] = useState("");
+  const [currentColor, setCurrentColor] = useState(0);
 
   const addItem = (task) => {
     setItems([...items, { id: items.length + 1, task: task }]);
@@ -25,6 +30,16 @@ const TodayTask = () => {
   const deleteItem = (id) => {
     const filtered = items.filter((item) => item.id !== id);
     setItems(filtered);
+  };
+
+  const editItem = (id) => {
+    const itemToEdit = items.find((item) => item.id === id);
+    setEditItemId(id);
+    setEditedTask(itemToEdit.task);
+  };
+
+  const handleColorToggle = () => {
+    setCurrentColor((prev) => (prev + 1) % colorToggle.length);
   };
 
   return (
@@ -38,8 +53,23 @@ const TodayTask = () => {
       <div className={styles.heading}>
         <h2>What do you have planned for the day?</h2>
       </div>
-      <TodoForm addItem={addItem} />
-      <TodoList items={items} deleteItem={deleteItem} />
+      <TodoForm
+        addItem={addItem}
+        setItems={setItems}
+        editedTask={editedTask}
+        editItemId={editItemId}
+        setEditedTask={setEditedTask}
+        setEditItemId={setEditItemId}
+        handleColorToggle={handleColorToggle}
+      />
+      <TodoList
+        items={items}
+        deleteItem={deleteItem}
+        editItem={editItem}
+        editItemId={editItemId}
+        editedTask={editedTask}
+        color={colorToggle[currentColor]}
+      />
     </div>
   );
 };

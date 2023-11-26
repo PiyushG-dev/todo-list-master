@@ -31,3 +31,46 @@
 .form_container button:active{
     background-color: #33105d;
 }
+
+.features{
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+}
+
+.task_type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 6rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    background-color: #6d33b5;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.task_type:active{
+    background-color: #33105d;
+}
+
+.task_type span:nth-of-type(1){
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#ff8977;
+}
+.task_type span:nth-of-type(2){
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#79d2ff;
+}
+.task_type span:nth-of-type(3){
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#ffdb79;
+}

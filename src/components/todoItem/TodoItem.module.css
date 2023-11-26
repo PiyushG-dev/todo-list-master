@@ -22,14 +22,26 @@
     gap: 1rem;
 }
 
-.item span{
+/* .item span{
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color:#ff8977;
+} */
+
+.item_features{
+    display: flex;
+    align-items: center;
+    gap: 2vmax;
 }
 
 .delete{
+    font-size: 1.5rem;
+    color: #33105d;
+    cursor: pointer;
+}
+
+.edit{
     font-size: 1.5rem;
     color: #33105d;
     cursor: pointer;
