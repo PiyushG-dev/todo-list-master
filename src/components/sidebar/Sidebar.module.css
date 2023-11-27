@@ -5,6 +5,9 @@
     align-items: center;
     width: 25%;
     padding: 2vmax 0rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
 }
 
 .info_wrapper{
@@ -56,6 +59,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.link_text{
+    font-size: 1.8vmax;
 }
 
 .calender{
@@ -112,4 +119,65 @@
     font-weight: 300;
     color: #5d5d5d;
     font-size: 1.6vmax;
+}
+
+@media (max-width:900px){
+    .sidebar_container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .info h2{
+        font-size: 3vmax;
+    }
+
+    .info p{
+        font-size: 2.5vmax;
+    }
+    
+    .info_wrapper{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .info_container{
+        align-items: flex-start;
+    }
+
+    .sidebar_container hr{
+        height: 10vmax;
+        width: inherit;
+    }
+
+    .links_container{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .link_text{
+        font-size: 2.5vmax;
+    }
+
+    .filter_container{
+        flex-direction: row;
+        gap: 1.5vmax;
+    }
+
+    .filter{
+        gap: 1.2vmax;
+    }
+
+    .filter h2{
+        font-size: 2vmax;
+    }
+
+}
+
+@media (max-width:640px){
+    
 }

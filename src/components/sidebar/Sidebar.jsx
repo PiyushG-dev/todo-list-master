@@ -24,11 +24,11 @@ const Sidebar = ({ sidebarStyle, isDarkMode }) => {
             <FontAwesomeIcon className={styles.calender} icon={faCalendar} />
             <Link
               to="/"
+              className={styles.link_text}
               style={{
                 color: "#5d5d5d",
                 fontWeight: 300,
                 textDecoration: "none",
-                fontSize: "1.8vmax",
                 color: isDarkMode ? "#fff" : "#333",
               }}
             >
@@ -54,11 +54,11 @@ const Sidebar = ({ sidebarStyle, isDarkMode }) => {
           <FontAwesomeIcon className={styles.gear} icon={faGear} />
           <Link
             to="/settings"
+            className={styles.link_text}
             style={{
               color: "#5d5d5d",
               fontWeight: 300,
               textDecoration: "none",
-              fontSize: "1.8vmax",
               color: isDarkMode ? "#fff" : "#333",
             }}
           >

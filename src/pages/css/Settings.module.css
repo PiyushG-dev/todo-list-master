@@ -17,3 +17,13 @@
     margin-top: 2vmax;
 }
 
+@media (max-width:900px){
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        border-radius: 0rem;
+    }
+    .container{
+        margin-top: 5vmax;
+    }
+}

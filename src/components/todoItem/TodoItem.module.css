@@ -11,7 +11,7 @@
     color:#5d5d5d;
 }
 
-.item_container .item h1{
+.item h1{
     font-weight: 300;
     font-size: 1.5vmax;
 }
@@ -21,14 +21,6 @@
     align-items: center;
     gap: 1rem;
 }
-
-/* .item span{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color:#ff8977;
-} */
-
 .item_features{
     display: flex;
     align-items: center;
@@ -45,4 +37,15 @@
     font-size: 1.5rem;
     color: #33105d;
     cursor: pointer;
+}
+
+@media (max-width:900px){
+    .item_container{
+        width: 50vmax;
+        height: 5vmax;
+    }
+
+    .item h1{
+        font-size: 2.2vmax;
+    }
 }

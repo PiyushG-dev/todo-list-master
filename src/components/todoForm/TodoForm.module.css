@@ -74,3 +74,10 @@
     border-radius: 50%;
     background-color:#ffdb79;
 }
+
+@media (max-width:900px){
+    .form_container input{
+        width: 60vmax;
+        height: 5vmax;
+    }
+}

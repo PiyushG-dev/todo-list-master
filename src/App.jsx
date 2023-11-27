@@ -23,12 +23,6 @@ const App = () => {
     backgroundColor: isDarkMode ? "#333" : "#fff",
     transition: "background-color 0.3s, color 0.3s",
     margin: ".5rem 0rem",
-    borderTopLeftRadius: "1rem",
-    borderBottomLeftRadius: "1rem",
-  };
-
-  const textStyle = {
-    color: isDarkMode ? "#fff" : "#333",
   };
 
   return (

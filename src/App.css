@@ -1,11 +1,22 @@
 .App{
     display: flex;
     width: 90vw;
-    height: 150vh;
+    height: 140vh;
     margin: 3rem 0rem;
     padding: 0rem .5rem;
     border-radius: 1.5rem;
     background-color: #fff;
     overflow: hidden;
+    
 }
 
+
+@media (max-width:900px) {
+    .App{
+        display: block;
+        border-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        margin-bottom: 0rem;
+    }
+}
